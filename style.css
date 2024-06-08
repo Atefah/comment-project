@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    font-size: 16px;
+    background: #f8fcfd;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+ .comment-list, .comment-box{
+    background: black;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px #0002;
+    padding: 40px 10px;
+   
+}
+
+.comment-section{
+    background: black;
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+.comment-section .comment-top p{
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comment-list .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px;
+    overflow: hidden;
+}
+.comment-list .user img{
+    display: flex;
+    height: 38px;
+    width: 38px;
+    border-radius: 50px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+.comment-list .name{
+    color: white;
+    font-weight: 600;
+}
+.comment-list .day{
+    font-size: 12px;
+    color: white;
+}
+.post-comment .comment{
+    padding: 0 0 20px 10px;
+    color: white;
+}
+ .delete{
+    float: left;
+    padding: 6px 14px;
+    margin-left:10px;
+    border: none;
+    background: #bb4d45;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+.delete:hover{
+    background: #f11905;
+}
+
+.comment-box input, textarea{
+    background: #4d4949;
+    width: -webkit-fill-available;
+    margin: 10px;
+   padding: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 0 0 5px #0003;
+
+}
+.comment-box input, textarea:focus{
+    outline-color:#009cff;
+}
+.comment-box .comment-submit{
+    float: left;
+    padding: 6px 14px;
+    margin-left:10px ;
+    border: none;
+    background: #009cff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.comment-box .comment-submit:hover{
+    background: #027ecc;
+}
+
